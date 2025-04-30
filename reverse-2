@@ -1,0 +1,5 @@
+original_list = list(map(int, input("Enter list elements: ").split()))
+reversed_list = []
+for i in range(len(original_list) - 1, -1, -1):
+    reversed_list.append(original_list[i])
+print("Reversed list:", reversed_list)
