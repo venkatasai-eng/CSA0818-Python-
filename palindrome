@@ -1,0 +1,10 @@
+elements = input("Enter list elements separated by space: ").split()
+is_palindrome = True
+for i in range(len(elements) // 2):
+    if elements[i] != elements[-(i + 1)]:
+        is_palindrome = False
+        break
+if is_palindrome:
+    print("The list is a palindrome.")
+else:
+    print("The list is not a palindrome.")
